@@ -1,4 +1,4 @@
-<VAST version="3.0">
+<VAST version="2.0">
 <Ad id="Test">
 <InLine>
 <Extensions>
@@ -13,7 +13,7 @@
 <Creatives>
 <Creative sequence="1" AdID="7E7F3BE9-9717-4289-9094-B77EEDC4086A">
 <Linear>
-<Duration>00:00:05</Duration>
+<Duration>00:00:30</Duration>
 <TrackingEvents>
 <Tracking event="start">http://www.example.com/start</Tracking>
 <Tracking event="firstQuartile">http://www.example.com/firstQuartile</Tracking>
@@ -34,7 +34,7 @@
 <ClickTracking id="123">http://www.example.com/click</ClickTracking>
 </VideoClicks>
 <MediaFiles>
-<MediaFile id="video" delivery="progressive" type="video/mp4" bitrate="1215" width="1280" height="720">https://download.samplelib.com/mp4/sample-5s.mp4</MediaFile>
+<MediaFile id="video" delivery="progressive" type="video/mp4" bitrate="1215" width="1280" height="720">https://basil79.github.io/vast-sample-tags/pg/24.mp4</MediaFile>
 </MediaFiles>
 </Linear>
 </Creative>
