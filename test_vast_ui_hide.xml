@@ -1,4 +1,4 @@
-VAST version="3.0">
+<VAST version="3.0">
   <Ad id="Test">
     <InLine>
       <AdSystem version="3.0">Test</AdSystem>
