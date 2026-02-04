@@ -23,6 +23,12 @@
           <ui_display>always</ui_display>
           <ui_text>Skip in [remaining] seconds</ui_text>
         </Extension>
+        <Extension type="uiSettings">
+          <UiHideable>1</UiHideable>
+          <ui_type>skip</ui_type>
+          <ui_display>always</ui_display>
+          <ui_text>Skip in [remaining] seconds</ui_text>
+        </Extension>
       </Extensions>
       
       <Creatives>
