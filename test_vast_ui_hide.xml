@@ -17,7 +17,7 @@
         </Extension>
         
         <!-- Стандартное расширение для UI -->
-        <Extension type="uiSettings">
+        <Extension type="ui">
           <UiHideable>1</UiHideable>
           <ui_type>skip</ui_type>
           <ui_display>always</ui_display>
