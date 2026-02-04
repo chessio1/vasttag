@@ -66,3 +66,71 @@
     </InLine>
   </Ad>
 </VAST>
+<VAST version="3.0">
+  <Ad id="Test">
+    <InLine>
+      <AdSystem version="3.0">Test</AdSystem>
+      <AdTitle>Test</AdTitle>
+      <Description>Test ad</Description>
+      <Error>http://www.example.com/error</Error>
+      <Impression>http://www.example.com/impression</Impression>
+      
+      <Extensions>
+        <!-- Расширение для контроля UI -->
+        <Extension type="skip">
+          <skipoffset>00:00:05</skipoffset>
+          <skipmessage>Skip in [remaining]</skipmessage>
+          <skipbuttontext>Skip Ad</skipbuttontext>
+          <skipbuttonposition>top-right</skipbuttonposition>
+        </Extension>
+        
+        <!-- Стандартное расширение для UI -->
+        <Extension type="ui">
+          <UiHideable>1</UiHideable>
+          <ui_type>skip</ui_type>
+          <ui_display>always</ui_display>
+          <ui_text>Skip in [remaining] seconds</ui_text>
+        </Extension>
+      </Extensions>
+      
+      <Creatives>
+        <Creative id="1" sequence="1" AdID="7E7F3BE9-9717-4289-9094-B77EEDC4086A">
+          <Linear skipoffset="00:00:05">
+            <Duration>00:00:30</Duration>
+            <AdParameters/>
+            
+            <TrackingEvents>
+              <Tracking event="start">http://www.example.com/start</Tracking>
+              <Tracking event="firstQuartile">http://www.example.com/firstQuartile</Tracking>
+              <Tracking event="midpoint">http://www.example.com/midpoint</Tracking>
+              <Tracking event="thirdQuartile">http://www.example.com/thirdQuartile</Tracking>
+              <Tracking event="complete">http://www.example.com/complete</Tracking>
+              <Tracking event="mute">http://www.example.com/mute</Tracking>
+              <Tracking event="unmute">http://www.example.com/unmute</Tracking>
+              <Tracking event="rewind">http://www.example.com/rewind</Tracking>
+              <Tracking event="pause">http://www.example.com/pause</Tracking>
+              <Tracking event="resume">http://www.example.com/resume</Tracking>
+              <Tracking event="fullscreen">http://www.example.com/fullscreen</Tracking>
+              <Tracking event="creativeView">http://www.example.com/creativeView</Tracking>
+              <Tracking event="acceptInvitation">http://www.example.com/acceptInvitation</Tracking>
+              <!-- Обязательные события для пропускаемой рекламы -->
+              <Tracking event="skip">http://www.example.com/skip</Tracking>
+              <Tracking event="progress" offset="00:00:05">http://www.example.com/skip_available</Tracking>
+            </TrackingEvents>
+            
+            <VideoClicks>
+              <ClickThrough id="123">http://google.com</ClickThrough>
+              <ClickTracking id="123">http://www.example.com/click</ClickTracking>
+            </VideoClicks>
+            
+            <MediaFiles>
+              <MediaFile id="video" delivery="progressive" type="video/mp4" bitrate="1215" width="1280" height="720" scalable="true" maintainAspectRatio="true">
+                <![CDATA[https://basil79.github.io/vast-sample-tags/pg/24.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
