@@ -9,12 +9,6 @@
       
       <Extensions>
         <!-- Расширение для контроля UI -->
-        <Extension type="skip">
-          <skipoffset>00:00:05</skipoffset>
-          <skipmessage>Skip in [remaining]</skipmessage>
-          <skipbuttontext>Skip Ad</skipbuttontext>
-          <skipbuttonposition>top-right</skipbuttonposition>
-        </Extension>
         
         <!-- Стандартное расширение для UI -->
         <Extension type="ui">
@@ -50,10 +44,7 @@
               <Tracking event="resume">http://www.example.com/resume</Tracking>
               <Tracking event="fullscreen">http://www.example.com/fullscreen</Tracking>
               <Tracking event="creativeView">http://www.example.com/creativeView</Tracking>
-              <Tracking event="acceptInvitation">http://www.example.com/acceptInvitation</Tracking>
-              <!-- Обязательные события для пропускаемой рекламы -->
-              <Tracking event="skip">http://www.example.com/skip</Tracking>
-              <Tracking event="progress" offset="00:00:05">http://www.example.com/skip_available</Tracking>
+              <Tracking event="acceptInvitation">http://www.example.com/acceptInvitation</Tracking>             
             </TrackingEvents>
             
             <VideoClicks>
